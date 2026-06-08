@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ベーシックなチャットアプリ</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <button type="button" class="back-button">◀︎ back</button>
+        <img id="header-photo" src="" alt="">
+        <div id="friend-name"></div>
+    </header>
+    <section id="login-view">
+        <div id="login-list"></div>
+    </section>
+    <section id="friends-view">
+        <div id="friends-list"></div>
+    </section>
+    <section id="message-view">
+        <div id="output"></div>
+        <div class="message-form">
+            <textarea name="text" id="text"></textarea>
+            <button id="send">送信</button>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

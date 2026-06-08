@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    border: 20px solid #c2dff5;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c2dff5;
+    border-bottom: 1px solid #ddd;
+}
+
+.back-button {
+    position: absolute;
+    left: 12px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: #49b3ff;
+    font-weight: bolder;
+}
+
+#friend-name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#header-photo {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#login-view,
+#friends-view {
+    padding: 16px;
+}
+
+#login-list,
+#friends-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-button,
+.friend-button {
+    padding: 16px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.friend-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-button:hover,
+.friend-button:hover {
+    background: #f2f8fd;
+}
+
+#message-view {
+    width: 100%;
+    padding: 12px;
+}
+
+.message-form {
+    margin: 24px;
+    display: flex;
+    gap: 8px;
+    
+}
+
+#text {
+    flex: 1;
+    height: 64px;
+    border: 2px solid #a5d9fe;
+    /* border-radius: 25%; */
+}
+
+#send {
+    width: 80px;
+    background: #a5d9fe;
+    border: none;
+    border-radius: 25%;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+#output {
+    overflow: auto;
+    height:70vh;
+    font-size: 18px;
+    margin-top: 32px;
+}
+
+#output p {
+    overflow-wrap: anywhere;
+}
+
+.own-message {
+    margin-left: 32px;
+}
+
+.message-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.message-text {
+    display: block;
+    flex: 1;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.sender-name {
+    font-weight: bold;
+    color: #49b3ff;
+    font-size: 14px;
+}
+
+.edit-button {
+    padding: 2px 8px;
+    border: none;
+    border-radius: 10px;
+    background: #e5f4ff;
+    color: #49b3ff;
+    font-size: 12px;
+}
+
+textarea {
+    width: 90%;
+    height: 12vh;
+    font-size: 18px;
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
+}
+
+.created-at {
+    font-size: 12px;
+    color: #888;
+}
